@@ -3,7 +3,7 @@
     <h1>gy-serv-init</h1>
 </div>
 
-> `gy-serv-init` initiates a new Golang webserver that uses the `gin-gonic` package
+> `gy-serv-init` initiates a new Golang webserver that uses the `gin-gonic` package as its http framework.
 
 ### Usage
 
