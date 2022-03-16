@@ -12,8 +12,6 @@ func main() {
 		panic(err)
 	}
 
-	fmt.Println(os.Args)
-
 	if len(os.Args) > 2 {
 		panic("Too many arguments")
 	} else if len(os.Args) < 2 {

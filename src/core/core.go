@@ -15,12 +15,10 @@ func Main(pwd, projectName *string) {
 
 	cmd := exec.Command("go", "mod", "init", *projectName)
 	cmd.Dir = projectDir
-	out, err := cmd.Output()
+	_, err := cmd.Output()
 	if err != nil {
 		panic(err)
 	}
-
-	fmt.Println(out)
 
 	mkdir(fmt.Sprintf("%s/%s/src", *pwd, *projectName))
 	mkdir(fmt.Sprintf("%s/%s/src/controllers", *pwd, *projectName))
